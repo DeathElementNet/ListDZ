@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class EverybodyDrinks {
+public class CreateSelection {
     public static void printSelectionMenu() {
         System.out.print("""
                 Начинаем начинать - введите номер операции и нажмите enter:

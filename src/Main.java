@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Готов закупиться??");
 
         while (true) {
-            EverybodyDrinks.printSelectionMenu();
+            CreateSelection.printSelectionMenu();
 
             String selectOperation = scanner.next();
 
@@ -21,16 +21,16 @@ public class Main {
             }
 
             switch (selectOperation) {
-                case "1" -> EverybodyDrinks.addPurchase(scanner, shoppingList);
+                case "1" -> CreateSelection.addPurchase(scanner, shoppingList);
 
-                case "2" -> EverybodyDrinks.list(shoppingList);
+                case "2" -> CreateSelection.list(shoppingList);
 
                 case "3" -> {
-                    EverybodyDrinks.list(shoppingList);
-                    EverybodyDrinks.deletePurchase(scanner, shoppingList);
+                    CreateSelection.list(shoppingList);
+                    CreateSelection.deletePurchase(scanner, shoppingList);
                 }
 
-                case "4" -> EverybodyDrinks.searching(scanner, shoppingList);
+                case "4" -> CreateSelection.searching(scanner, shoppingList);
 
                 default -> System.out.println("Такой операции нет!! их всего 5, попробуй еще раз");
             }
